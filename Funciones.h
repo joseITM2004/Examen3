@@ -69,37 +69,9 @@ void transformarBinario(imagen &g)
         {
 
             g.R[i][j] =g.R[i][j]>=128?1:0 ;
+            g.G[i][j]=g.R[i][j]>=128?1:0;
+            g.B[i][j]=g.B[i][j]>=128?1:0;           
         }
     }
 
-    // inversion imagen 2
-    for (int i = 0; i < 5; i++)
-    {
-        for (int j = 0; j < 5; j++)
-        {
-            if (g.G[i][j] >= 128)
-            {
-                g.G[i][j] = 1;
-            }
-            else
-            {
-                g.G[i][j] = 0;
-            }
-        }
-        // inversion imagen 3
-        for (int i = 0; i < 5; i++)
-        {
-            for (int j = 0; j < 5; j++)
-            {
-                if (g.B[i][j] >= 128)
-                {
-                    g.B[i][j] = 1;
-                }
-                else
-                {
-                    g.B[i][j] = 0;
-                }
-            }
-        }
-    }
 }
