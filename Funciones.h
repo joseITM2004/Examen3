@@ -56,9 +56,9 @@ void transformarBinario(imagen &g)
         for (int j = 0; j < 5; j++)
         {
 
-            g.R[i][j] = g.R[i][j] >= 128 ? 1 : 0;
-            g.G[i][j] = g.G[i][j] >= 128 ? 1 : 0;
-            g.B[i][j] = g.B[i][j] >= 128 ? 1 : 0;
+            g.R[i][j] = g.R[i][j] >= 128 ? 255 : 0;
+            g.G[i][j] = g.G[i][j] >= 128 ? 255 : 0;
+            g.B[i][j] = g.B[i][j] >= 128 ? 255 : 0;
         }
     }
 }
