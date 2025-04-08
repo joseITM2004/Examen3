@@ -67,7 +67,7 @@ int main()
           {233, 235, 147, 139, 120}}} // fin imagen 3
     }; // Fin inicialización de imágenes
     imagen grises;
-    grises = escarlarGrises(imagenes);
+    escarlarGrises(imagenes,grises);
     cout << "*** imagenes en escala de grise***" << endl;
     cout << endl;
     cout << "Impresion imagen" << "1" << endl;
