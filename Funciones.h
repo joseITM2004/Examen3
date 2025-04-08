@@ -4,32 +4,29 @@ struct imagen
     float R[5][5], G[5][5], B[5][5];
 };
 
-void escarlarGrises(imagen e[], imagen &gris)
+imagen escarlarGrises(imagen e[])
 {
-    struct ImagenGris
-    {
-        float gr[5][5];
-    };
-    ImagenGris im[3];
-    for (int n = 0; n < 3; n++)
-    {
-        for (int i = 0; i < 5; i++)
-        {
-            for (int j = 0; j < 5; j++)
-            {
-                im[n].gr[i][j] = (e[n].R[i][j] + e[n].G[i][j] + e[n].B[i][j]) / 3;
-            }
-        }
-        for (int i = 0; i < 5; i++)
-        {
-            for (int j = 0; j < 4; j++)
-            {
-                gris.R[i][j] = im[0].gr[i][j];
-                gris.G[i][j] = im[1].gr[i][j];
-                gris.B[i][j] = im[2].gr[i][j];
-            }
+    double average=0;
+    imagen escalada;
+    for(int i=0;i<5;i++){
+        for(int j=0;j<5;j++){
+            average=e[0].R[i][j]+e[0].G[i][j]+e[0].G[i][j]+e[0].B[i][j];
+            escalada.R[i][j]=average;
         }
     }
+    for(int i=0;i<5;i++){
+        for(int j=0;j<5;j++){
+            average=e[1].R[i][j]+e[1].G[i][j]+e[1].G[i][j]+e[1].B[i][j];
+            escalada.G[i][j]=average;
+        }
+    }
+    for(int i=0;i<5;i++){
+        for(int j=0;j<5;j++){
+            average=e[2].R[i][j]+e[2].G[i][j]+e[2].G[i][j]+e[2].B[i][j];
+            escalada.B[i][j]=average;
+        }
+    }
+    return escalada;
 }
 
 void invertirColor(imagen &g)

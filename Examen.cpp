@@ -40,7 +40,7 @@ int main(){
 
          },
          {// inicio imagen B
-          {120, 253, 209, 29, 163},
+          {120, 253, 209, 29, 163}, 
           {153, 167, 253, 198, 151},
           {200, 208, 174, 198, 118},
           {115, 146, 170, 209, 182},
@@ -66,7 +66,7 @@ int main(){
           {233, 235, 147, 139, 120}}} // fin imagen 3
     }; // Fin inicialización de imágenes
     imagen grises;
-    escarlarGrises(imagenes, grises);
+    grises=escarlarGrises(imagenes);
     cout<<"*** imagenes en escala de grise***"<<endl;
     cout<<endl;
     cout << "Impresion imagen" << "1" << endl;
