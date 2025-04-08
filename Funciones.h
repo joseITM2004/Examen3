@@ -22,7 +22,7 @@ void escarlarGrises(imagen e[], imagen &gris)
         }
         for (int i = 0; i < 5; i++)
         {
-            for (int j = 0; j < 4; j++)
+            for (int j = 0; j < 5; j++)
             {
                 gris.R[i][j] = im[0].gr[i][j];
                 gris.G[i][j] = im[1].gr[i][j];
