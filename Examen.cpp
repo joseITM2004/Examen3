@@ -3,7 +3,8 @@
 #include <cmath>
 #include "Funciones.h"
 using namespace std;
-int main(){
+int main()
+{
     imagen imagenes[3] = {
         { // inicio imagen 1
          {// inicio imagen R
@@ -40,7 +41,7 @@ int main(){
 
          },
          {// inicio imagen B
-          {120, 253, 209, 29, 163}, 
+          {120, 253, 209, 29, 163},
           {153, 167, 253, 198, 151},
           {200, 208, 174, 198, 118},
           {115, 146, 170, 209, 182},
@@ -66,9 +67,9 @@ int main(){
           {233, 235, 147, 139, 120}}} // fin imagen 3
     }; // Fin inicialización de imágenes
     imagen grises;
-    grises=escarlarGrises(imagenes);
-    cout<<"*** imagenes en escala de grise***"<<endl;
-    cout<<endl;
+    grises = escarlarGrises(imagenes);
+    cout << "*** imagenes en escala de grise***" << endl;
+    cout << endl;
     cout << "Impresion imagen" << "1" << endl;
     for (int i = 0; i < 5; i++)
     {
@@ -76,42 +77,42 @@ int main(){
         {
             cout << grises.R[i][j];
         }
-        cout<<endl;
+        cout << endl;
     }
-    cout<<endl;
+    cout << endl;
     cout << "Impresion imagen" << "1" << endl;
     for (int i = 0; i < 5; i++)
     {
         for (int j = 0; j < 5; j++)
         {
-            cout << grises.R[i][j]<<", ";
+            cout << grises.R[i][j] << ", ";
         }
-        cout<<endl;
+        cout << endl;
     }
-    cout<<endl;
+    cout << endl;
     cout << "Impresion imagen" << "2" << endl;
     for (int i = 0; i < 5; i++)
     {
         for (int j = 0; j < 5; j++)
         {
-            cout << grises.G[i][j]<<",";
+            cout << grises.G[i][j] << ",";
         }
-        cout<<endl;
+        cout << endl;
     }
-    cout<<endl;
+    cout << endl;
     cout << "Impresion imagen" << "3" << endl;
     for (int i = 0; i < 5; i++)
     {
         for (int j = 0; j < 5; j++)
         {
-            cout << grises.B[i][j]<<", ";
+            cout << grises.B[i][j] << ", ";
         }
-        cout<<endl;
+        cout << endl;
     }
-    cout<<endl;
+    cout << endl;
     invertirColor(grises);
-    cout<<"*** imagenes invertidas***"<<endl;
-    cout<<endl;
+    cout << "*** imagenes invertidas***" << endl;
+    cout << endl;
     cout << "Impresion imagen" << "1" << endl;
     for (int i = 0; i < 5; i++)
     {
@@ -119,83 +120,73 @@ int main(){
         {
             cout << grises.R[i][j];
         }
-        cout<<endl;
+        cout << endl;
     }
-    cout<<endl;
+    cout << endl;
     cout << "Impresion imagen" << "1" << endl;
     for (int i = 0; i < 5; i++)
     {
         for (int j = 0; j < 5; j++)
         {
-            cout << grises.R[i][j]<<", ";
+            cout << grises.R[i][j] << ", ";
         }
-        cout<<endl;
+        cout << endl;
     }
-    cout<<endl;
+    cout << endl;
     cout << "Impresion imagen" << "2" << endl;
     for (int i = 0; i < 5; i++)
     {
         for (int j = 0; j < 5; j++)
         {
-            cout << grises.G[i][j]<<",";
+            cout << grises.G[i][j] << ",";
         }
-        cout<<endl;
+        cout << endl;
     }
-    cout<<endl;
+    cout << endl;
     cout << "Impresion imagen" << "3" << endl;
     for (int i = 0; i < 5; i++)
     {
         for (int j = 0; j < 5; j++)
         {
-            cout << grises.B[i][j]<<", ";
+            cout << grises.B[i][j] << ", ";
         }
-        cout<<endl;
+        cout << endl;
     }
-    cout<<endl;
+    cout << endl;
     transformarBinario(grises);
-    cout<<"*** imagenes invertidas***"<<endl;
-    cout<<endl;
+    cout << "*** imagenes invertidas***" << endl;
+    cout << endl;
+    cout << endl;
+    cout << "imprimir imagenes transformada a binarios" << endl;
     cout << "Impresion imagen" << "1" << endl;
     for (int i = 0; i < 5; i++)
     {
         for (int j = 0; j < 5; j++)
         {
-            cout << grises.R[i][j];
+            cout << grises.R[i][j] << ", ";
         }
+        cout << endl;
     }
-    cout<<endl;
-
-    cout<<"imprimir imagenes transformada a binarios"<<endl;
-    cout << "Impresion imagen" << "1" << endl;
-    for (int i = 0; i < 5; i++)
-    {
-        for (int j = 0; j < 5; j++)
-        {
-            cout << grises.R[i][j]<<", ";
-        }
-        cout<<endl;
-    }
-    cout<<endl;
+    cout << endl;
     cout << "Impresion imagen" << "2" << endl;
     for (int i = 0; i < 5; i++)
     {
         for (int j = 0; j < 5; j++)
         {
-            cout << grises.G[i][j]<<",";
+            cout << grises.G[i][j] << ",";
         }
-        cout<<endl;
+        cout << endl;
     }
-    cout<<endl;
+    cout << endl;
     cout << "Impresion imagen" << "3" << endl;
     for (int i = 0; i < 5; i++)
     {
         for (int j = 0; j < 5; j++)
         {
-            cout << grises.B[i][j]<<", ";
+            cout << grises.B[i][j] << ", ";
         }
-        cout<<endl;
+        cout << endl;
     }
-    cout<<endl;
+    cout << endl;
     system("pause");
-
 }
