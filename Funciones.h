@@ -10,19 +10,19 @@ imagen escarlarGrises(imagen e[])
     imagen escalada;
     for(int i=0;i<5;i++){
         for(int j=0;j<5;j++){
-            average=e[0].R[i][j]+e[0].G[i][j]+e[0].G[i][j]+e[0].B[i][j];
+            average=(e[0].R[i][j]+e[0].G[i][j]+e[0].G[i][j]+e[0].B[i][j])/3;
             escalada.R[i][j]=average;
         }
     }
     for(int i=0;i<5;i++){
         for(int j=0;j<5;j++){
-            average=e[1].R[i][j]+e[1].G[i][j]+e[1].G[i][j]+e[1].B[i][j];
+            average=(e[1].R[i][j]+e[1].G[i][j]+e[1].G[i][j]+e[1].B[i][j])/3;
             escalada.G[i][j]=average;
         }
     }
     for(int i=0;i<5;i++){
         for(int j=0;j<5;j++){
-            average=e[2].R[i][j]+e[2].G[i][j]+e[2].G[i][j]+e[2].B[i][j];
+            average=(e[2].R[i][j]+e[2].G[i][j]+e[2].G[i][j]+e[2].B[i][j])/3;
             escalada.B[i][j]=average;
         }
     }
