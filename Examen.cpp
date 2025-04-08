@@ -67,20 +67,11 @@ int main()
           {233, 235, 147, 139, 120}}} // fin imagen 3
     }; // Fin inicialización de imágenes
     imagen grises;
-    escarlarGrises(imagenes,grises);
+    grises=escarlarGrises(imagenes);
     cout << "*** imagenes en escala de grise***" << endl;
     cout << endl;
     cout << "Impresion imagen" << "1" << endl;
-    for (int i = 0; i < 5; i++)
-    {
-        for (int j = 0; j < 5; j++)
-        {
-            cout << grises.R[i][j];
-        }
-        cout << endl;
-    }
     cout << endl;
-    cout << "Impresion imagen" << "1" << endl;
     for (int i = 0; i < 5; i++)
     {
         for (int j = 0; j < 5; j++)
@@ -113,15 +104,6 @@ int main()
     invertirColor(grises);
     cout << "*** imagenes invertidas***" << endl;
     cout << endl;
-    cout << "Impresion imagen" << "1" << endl;
-    for (int i = 0; i < 5; i++)
-    {
-        for (int j = 0; j < 5; j++)
-        {
-            cout << grises.R[i][j];
-        }
-        cout << endl;
-    }
     cout << endl;
     cout << "Impresion imagen" << "1" << endl;
     for (int i = 0; i < 5; i++)
@@ -154,8 +136,6 @@ int main()
     }
     cout << endl;
     transformarBinario(grises);
-    cout << "*** imagenes invertidas***" << endl;
-    cout << endl;
     cout << endl;
     cout << "imprimir imagenes transformada a binarios" << endl;
     cout << "Impresion imagen" << "1" << endl;
